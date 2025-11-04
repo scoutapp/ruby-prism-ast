@@ -1,0 +1,127 @@
+@ ProgramNode (location: (38,0)-(48,35))
+├── flags: ∅
+├── locals: []
+└── statements:
+    @ StatementsNode (location: (38,0)-(48,35))
+    ├── flags: ∅
+    └── body: (length: 2)
+        ├── @ ClassNode (location: (38,0)-(46,3))
+        │   ├── flags: newline
+        │   ├── locals: []
+        │   ├── class_keyword_loc: (38,0)-(38,5) = "class"
+        │   ├── constant_path:
+        │   │   @ ConstantReadNode (location: (38,6)-(38,15))
+        │   │   ├── flags: ∅
+        │   │   └── name: :TestClass
+        │   ├── inheritance_operator_loc: ∅
+        │   ├── superclass: ∅
+        │   ├── body:
+        │   │   @ StatementsNode (location: (39,2)-(45,5))
+        │   │   ├── flags: ∅
+        │   │   └── body: (length: 2)
+        │   │       ├── @ DefNode (location: (39,2)-(41,5))
+        │   │       │   ├── flags: newline
+        │   │       │   ├── name: :initialize
+        │   │       │   ├── name_loc: (39,6)-(39,16) = "initialize"
+        │   │       │   ├── receiver: ∅
+        │   │       │   ├── parameters:
+        │   │       │   │   @ ParametersNode (location: (39,17)-(39,24))
+        │   │       │   │   ├── flags: ∅
+        │   │       │   │   ├── requireds: (length: 1)
+        │   │       │   │   │   └── @ RequiredParameterNode (location: (39,17)-(39,24))
+        │   │       │   │   │       ├── flags: ∅
+        │   │       │   │   │       └── name: :message
+        │   │       │   │   ├── optionals: (length: 0)
+        │   │       │   │   ├── rest: ∅
+        │   │       │   │   ├── posts: (length: 0)
+        │   │       │   │   ├── keywords: (length: 0)
+        │   │       │   │   ├── keyword_rest: ∅
+        │   │       │   │   └── block: ∅
+        │   │       │   ├── body:
+        │   │       │   │   @ StatementsNode (location: (40,4)-(40,22))
+        │   │       │   │   ├── flags: ∅
+        │   │       │   │   └── body: (length: 1)
+        │   │       │   │       └── @ InstanceVariableWriteNode (location: (40,4)-(40,22))
+        │   │       │   │           ├── flags: newline
+        │   │       │   │           ├── name: :@message
+        │   │       │   │           ├── name_loc: (40,4)-(40,12) = "@message"
+        │   │       │   │           ├── value:
+        │   │       │   │           │   @ LocalVariableReadNode (location: (40,15)-(40,22))
+        │   │       │   │           │   ├── flags: ∅
+        │   │       │   │           │   ├── name: :message
+        │   │       │   │           │   └── depth: 0
+        │   │       │   │           └── operator_loc: (40,13)-(40,14) = "="
+        │   │       │   ├── locals: [:message]
+        │   │       │   ├── def_keyword_loc: (39,2)-(39,5) = "def"
+        │   │       │   ├── operator_loc: ∅
+        │   │       │   ├── lparen_loc: (39,16)-(39,17) = "("
+        │   │       │   ├── rparen_loc: (39,24)-(39,25) = ")"
+        │   │       │   ├── equal_loc: ∅
+        │   │       │   └── end_keyword_loc: (41,2)-(41,5) = "end"
+        │   │       └── @ DefNode (location: (43,2)-(45,5))
+        │   │           ├── flags: newline
+        │   │           ├── name: :greet
+        │   │           ├── name_loc: (43,6)-(43,11) = "greet"
+        │   │           ├── receiver: ∅
+        │   │           ├── parameters: ∅
+        │   │           ├── body:
+        │   │           │   @ StatementsNode (location: (44,4)-(44,17))
+        │   │           │   ├── flags: ∅
+        │   │           │   └── body: (length: 1)
+        │   │           │       └── @ CallNode (location: (44,4)-(44,17))
+        │   │           │           ├── flags: newline, ignore_visibility
+        │   │           │           ├── receiver: ∅
+        │   │           │           ├── call_operator_loc: ∅
+        │   │           │           ├── name: :puts
+        │   │           │           ├── message_loc: (44,4)-(44,8) = "puts"
+        │   │           │           ├── opening_loc: ∅
+        │   │           │           ├── arguments:
+        │   │           │           │   @ ArgumentsNode (location: (44,9)-(44,17))
+        │   │           │           │   ├── flags: ∅
+        │   │           │           │   └── arguments: (length: 1)
+        │   │           │           │       └── @ InstanceVariableReadNode (location: (44,9)-(44,17))
+        │   │           │           │           ├── flags: ∅
+        │   │           │           │           └── name: :@message
+        │   │           │           ├── closing_loc: ∅
+        │   │           │           └── block: ∅
+        │   │           ├── locals: []
+        │   │           ├── def_keyword_loc: (43,2)-(43,5) = "def"
+        │   │           ├── operator_loc: ∅
+        │   │           ├── lparen_loc: ∅
+        │   │           ├── rparen_loc: ∅
+        │   │           ├── equal_loc: ∅
+        │   │           └── end_keyword_loc: (45,2)-(45,5) = "end"
+        │   ├── end_keyword_loc: (46,0)-(46,3) = "end"
+        │   └── name: :TestClass
+        └── @ CallNode (location: (48,0)-(48,35))
+            ├── flags: newline
+            ├── receiver:
+            │   @ CallNode (location: (48,0)-(48,29))
+            │   ├── flags: ∅
+            │   ├── receiver:
+            │   │   @ ConstantReadNode (location: (48,0)-(48,9))
+            │   │   ├── flags: ∅
+            │   │   └── name: :TestClass
+            │   ├── call_operator_loc: (48,9)-(48,10) = "."
+            │   ├── name: :new
+            │   ├── message_loc: (48,10)-(48,13) = "new"
+            │   ├── opening_loc: (48,13)-(48,14) = "("
+            │   ├── arguments:
+            │   │   @ ArgumentsNode (location: (48,14)-(48,28))
+            │   │   ├── flags: ∅
+            │   │   └── arguments: (length: 1)
+            │   │       └── @ StringNode (location: (48,14)-(48,28))
+            │   │           ├── flags: ∅
+            │   │           ├── opening_loc: (48,14)-(48,15) = "\""
+            │   │           ├── content_loc: (48,15)-(48,27) = "Hello, world"
+            │   │           ├── closing_loc: (48,27)-(48,28) = "\""
+            │   │           └── unescaped: "Hello, world"
+            │   ├── closing_loc: (48,28)-(48,29) = ")"
+            │   └── block: ∅
+            ├── call_operator_loc: (48,29)-(48,30) = "."
+            ├── name: :greet
+            ├── message_loc: (48,30)-(48,35) = "greet"
+            ├── opening_loc: ∅
+            ├── arguments: ∅
+            ├── closing_loc: ∅
+            └── block: ∅
