@@ -1,4 +1,11 @@
-# ruby-prism-ast
+# Ruby Prism AST
+Accompanying article can be found at:
+
+https://www.scoutapm.com/blog/instrumenting-code-using-prism-and-the-ruby-abstract-syntax-tree
+
+
+## Parts
+
 An introduction to Prism, the Ruby AST, and using YARV to instrument Ruby code with timing instrumentation.
 
 Part 0. [Instruction Sequence](https://github.com/scoutapp/ruby-prism-ast/tree/main/0.%20Instruction%20Sequence)
